@@ -14,6 +14,7 @@ app.use(fileUpload({}));
 
 // Routes
 app.use("/api/post", require("./routes/post.route"));
+app.use("/api/auth", require("./routes/auth.route"));
 
 const PORT = process.env.PORT || 8080;
 
